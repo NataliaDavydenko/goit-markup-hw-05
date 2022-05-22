@@ -38,7 +38,7 @@
         <nav class="header-nav">
           <ul class="menu-list list">
             <li class="menu-item">
-              <a class="menu-link link" href="./index.html">Студия</a>
+              <a class="menu-link current link" href="./index.html">Студия</a>
             </li>
             <li class="menu-item">
               <a class="menu-link link" href="./portfolio.html">Портфолио</a>
@@ -80,7 +80,16 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="hero-btn" type="button">Заказать услугу</button>
+          <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal-wrapper">
+          <button class="modal-btn" data-modal-close>
+            <svg class="close-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          </div>
+        </div>
         </div>
       </section>
 
@@ -91,9 +100,9 @@
           <ul class="advantages-list list">
             <li class="advantages-item">
               <div class="advantages-img">
-              <svg class="advantages-icon" >
-                <use href="./images/icons.svg#icon-antenna"></use>
-              </svg>
+                <svg class="advantages-icon">
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
               </div>
               <h3 class="advantages-title">Внимание к деталям</h3>
               <p class="advantages-description">
@@ -103,9 +112,9 @@
             </li>
             <li class="advantages-item">
               <div class="advantages-img">
-              <svg class="advantages-icon" >
-                <use href="./images/icons.svg#icon-clock"></use>
-              </svg>
+                <svg class="advantages-icon">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
               </div>
               <h3 class="advantages-title">Пунктуальность</h3>
               <p class="advantages-description">
@@ -115,9 +124,9 @@
             </li>
             <li class="advantages-item">
               <div class="advantages-img">
-              <svg class="advantages-icon" >
-                <use href="./images/icons.svg#icon-diagram"></use>
-              </svg>
+                <svg class="advantages-icon">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
               </div>
               <h3 class="advantages-title">Планирование</h3>
               <p class="advantages-description">
@@ -127,9 +136,9 @@
             </li>
             <li class="advantages-item">
               <div class="advantages-img">
-              <svg class="advantages-icon" >
-                <use href="./images/icons.svg#icon-astronaut"></use>
-              </svg>
+                <svg class="advantages-icon">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
               </div>
               <h3 class="advantages-title">Современные технологии</h3>
               <p class="advantages-description">
@@ -154,6 +163,9 @@
                 width="370"
                 height="294"
               />
+              <div class="services-description">
+                <p class="services-name">Десктопные приложения</p>
+              </div>
             </li>
             <li class="services-item">
               <img
@@ -163,6 +175,9 @@
                 width="370"
                 height="294"
               />
+              <div class="services-description">
+                <p class="services-name">Мобильные приложения</p>
+              </div>
             </li>
             <li class="services-item">
               <img
@@ -172,6 +187,9 @@
                 width="370"
                 height="294"
               />
+              <div class="services-description">
+                <p class="services-name">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -635,5 +653,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
